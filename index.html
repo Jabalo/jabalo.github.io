@@ -14,7 +14,7 @@
                 display: inline-flex !important;
             }
         </style>
-        <script src="https://universityofbritishcolumbia4.my.salesforce.com/lightning/lightning.out.js"></script>
+        <!-- <script src="https://universityofbritishcolumbia4.my.salesforce.com/lightning/lightning.out.js"></script>
         <script>
             $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
                 function() {                  // Callback once framework and app load
@@ -28,9 +28,9 @@
                     );
                 },    'https://universityofbritishcolumbia4.my.salesforce.com/'  // Site endpoint
             );
-        </script>
-        <!-- <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script> -->
-        <!-- <script type='text/javascript'>
+        </script> -->
+        <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+        <script type='text/javascript'>
             var initESW = function(gslbBaseURL) {
                 embedded_svc.settings.displayHelpButton = true; //Or false
                 embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
@@ -74,6 +74,6 @@
             } else {
                 initESW('https://service.force.com');
             }
-        </script> -->
+        </script>
     </body>
 </html>
