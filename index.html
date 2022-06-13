@@ -16,19 +16,19 @@
         </style>
         <script src="https://universityofbritishcolumbia4.my.salesforce.com/lightning/lightning.out.js"></script>
         <script>
-            $Lightning.use("runtime_appointmentbooking__Guest_Flow:lightningOutGuest",
-                function() {                  // Callback once framework and app load
-                    $Lightning.createComponent(
-                        "lightning:flow",    // top-level component of your app
-                        { },    // attributes to set on the component when created
-                        "lexcontainer",    // the DOM location to insert the component
-                        function(component) {            // API name of the Flow
-                            component.startFlow("Lightning_Scheduler_Unauthenticated");
-                        }
-                    );
-                },    'https://universityofbritishcolumbia4.my.salesforce.com/'  // Site endpoint
+            $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
+            function() { // Callback once framework and app load
+            $Lightning.createComponent(
+            "lightning:flow", // top-level component of your app
+            { }, // attributes to set on the component when created
+            "lexcontainer", // the DOM location to insert the component
+            function(component) { // API name of the Flow
+            component.startFlow(”Lightning_Scheduler_Unauthenticated”);
+            }
             );
-        </script>
+            }, 'https://yourSiteDomain/siteURL/' // Site endpoint
+            );
+            </script>
         <!-- <style type='text/css'>
             .embeddedServiceHelpButton .helpButton .uiButton {
                 background-color: #005290;
