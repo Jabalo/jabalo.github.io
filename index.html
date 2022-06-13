@@ -29,6 +29,16 @@
                 },    'https://universityofbritishcolumbia4.my.salesforce.com/'  // Site endpoint
             );
         </script> -->
+        <style type='text/css'>
+            .embeddedServiceHelpButton .helpButton .uiButton {
+                background-color: #005290;
+                font-family: "Arial", sans-serif;
+            }
+            .embeddedServiceHelpButton .helpButton .uiButton:focus {
+                outline: 1px solid #005290;
+            }
+        </style>
+        
         <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
         <script type='text/javascript'>
             var initESW = function(gslbBaseURL) {
@@ -49,8 +59,8 @@
                 embedded_svc.settings.useCustomAuthentication = false;
                 embedded_svc.settings.loginClientId = '';
                 embedded_svc.settings.loginRedirectURL = '';
-                //embedded_svc.settings.loginTargetQuerySelector = '';
-                //embedded_svc.settings.authenticationStartLabel = '';
+                embedded_svc.settings.loginTargetQuerySelector = '';
+                embedded_svc.settings.authenticationStartLabel = '';
         
                 embedded_svc.init(
                     'https://universityofbritishcolumbia4.my.salesforce.com',
