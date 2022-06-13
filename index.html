@@ -56,11 +56,11 @@
                 embedded_svc.settings.enabledFeatures = ['FieldService'];
                 embedded_svc.settings.entryFeature = 'FieldService';
         
-                embedded_svc.settings.useCustomAuthentication = false;
+                embedded_svc.settings.useCustomAuthentication = true;
                 embedded_svc.settings.loginClientId = '';
                 embedded_svc.settings.loginRedirectURL = '';
-                embedded_svc.settings.loginTargetQuerySelector = '#salesforce-login';
-                embedded_svc.settings.authenticationStartLabel = 'Authentication Start';
+                embedded_svc.settings.loginTargetQuerySelector = '';
+                embedded_svc.settings.authenticationStartLabel = '';
         
                 embedded_svc.init(
                     'https://universityofbritishcolumbia4.my.salesforce.com',
