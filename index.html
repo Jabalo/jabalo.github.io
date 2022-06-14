@@ -3,19 +3,9 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     </head>
-    <body>
-        <h1>Test Salesforce Scheduler</h1>
-        <style>
-            .slds-visual-picker_vertical .slds-visual-picker__figure {
-                height: inherit !important;
-            }
-    
-            .runtime_appointmentbookingFlowLocation .slds-visual-picker_vertical {
-                display: inline-flex !important;
-            }
-        </style>
-        <script src="https://universityofbritishcolumbia4.my.site.com/scheduler/lightning/lightning.out.js"></script>
-        <script>
+    <script src="https://universityofbritishcolumbia4.my.site.com/scheduler/lightning/lightning.out.js"></script>
+    <script>
+        function init() {
             $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
                 function() { // Callback once framework and app load
                     $Lightning.createComponent(
@@ -27,7 +17,20 @@
                         }
                     );
                 }, 'https://universityofbritishcolumbia4.my.site.com/scheduler' // Site endpoint
-            );
-            </script>
+            );                
+        }
+    </script>
+    <body onload="init()">
+        <h1>Test Salesforce Scheduler</h1>
+        <style>
+            .slds-visual-picker_vertical .slds-visual-picker__figure {
+                height: inherit !important;
+            }
+    
+            .runtime_appointmentbookingFlowLocation .slds-visual-picker_vertical {
+                display: inline-flex !important;
+            }
+        </style>
+        <div id="container"></div>
     </body>
 </html>
