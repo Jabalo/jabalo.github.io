@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <!-- <head>
+    <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    </head> -->
+    </head>
     <body>
         <h1>Test Salesforce Scheduler</h1>
         <style>
@@ -26,64 +26,8 @@
                             component.startFlow("Inbound_New_Guest_Appointment");
                         }
                     );
-                }, 'https://universityofbritishcolumbia4.my.site.com/scheduler' // Site endpoint
+                }, 'https://universityofbritishcolumbia4.my.site.com/s/scheduler' // Site endpoint
             );
             </script>
-        <!-- <style type='text/css'>
-            .embeddedServiceHelpButton .helpButton .uiButton {
-                background-color: #005290;
-                font-family: "Arial", sans-serif;
-            }
-            .embeddedServiceHelpButton .helpButton .uiButton:focus {
-                outline: 1px solid #005290;
-            }
-        </style>
-        
-        <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-        <script type='text/javascript'>
-            var initESW = function(gslbBaseURL) {
-                embedded_svc.settings.displayHelpButton = true; //Or false
-                embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-        
-                //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-                //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
-        
-                //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-                //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-        
-                // Settings for Field Service
-        
-                embedded_svc.settings.enabledFeatures = ['FieldService'];
-                embedded_svc.settings.entryFeature = 'FieldService';
-        
-                embedded_svc.settings.useCustomAuthentication = true;
-                embedded_svc.settings.loginClientId = '';
-                embedded_svc.settings.loginRedirectURL = '';
-                embedded_svc.settings.loginTargetQuerySelector = '';
-                embedded_svc.settings.authenticationStartLabel = '';
-        
-                embedded_svc.init(
-                    'https://universityofbritishcolumbia4.my.salesforce.com',
-                    'https://universityofbritishcolumbia4.my.salesforce-sites.com/',
-                    gslbBaseURL,
-                    '00D8a000003CeCQ',
-                    'Test_Appointment_Management',
-                    {
-                        
-                    }
-                );
-            };
-        
-            if (!window.embedded_svc) {
-                var s = document.createElement('script');
-                s.setAttribute('src', 'https://universityofbritishcolumbia4.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-                s.onload = function() {
-                    initESW(null);
-                };
-                document.body.appendChild(s);
-            } else {
-                initESW('https://service.force.com');
-            }
-        </script> -->
     </body>
 </html>
